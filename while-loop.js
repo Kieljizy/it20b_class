@@ -36,3 +36,16 @@ while (i>=1){
     i--;
 }
 console.log(output);
+
+//array
+
+arr=[4,2,3];
+output = " ";
+i = 0;
+
+while(i<arr.length-1){
+    output += arr[i] + " ";
+    i++;
+}
+
+console.log(output);
