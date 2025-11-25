@@ -63,9 +63,24 @@ class Array{
         }
 
         //after condition
-        this.data[index] = elements;
+        this.data[index] = element;
     }
 
+     search(element){
+        //dli na mangitag correcting statement kay igo raman pangitaon ang element
+        for(let i=0; i< this.length; i++){
+            if(this.data[i] === element){
+                console.log(element + " is found at index " + i );
+                return i;
+
+            }
+        }
+
+        //false
+        console.log(element + "is not found at any index");
+        return -1;
+
+    }
 }
 
 arr1 = new Array([4,3,2]);
@@ -79,3 +94,5 @@ arr1.traverse();
 arr1.update(2,5);
 arr1.traverse();
 
+arr1.search(2);
+arr1.traverse();
