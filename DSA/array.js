@@ -54,12 +54,28 @@ class Array{
         delete this.data[this.length-1];
         this.length--;
     }
+
+    update(index, element){
+        //correcting statement - dli siya trycatch statement || must be false para mag shifting
+        if(index < 0 || index >= this.length){
+            console.log("invalid index");
+            return;
+        }
+
+        //after condition
+        this.data[index] = elements;
+    }
+
 }
 
 arr1 = new Array([4,3,2]);
 arr1.traverse();
 arr1.insert(0,9);
 arr1.traverse();
+
 arr1.delete(2);
+arr1.traverse();
+
+arr1.update(2,5);
 arr1.traverse();
 
