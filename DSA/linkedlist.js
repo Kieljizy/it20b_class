@@ -61,6 +61,17 @@ class Linkedlist{
 
         console.log("Target not found");
     }
+
+    search(element){
+        let current = this.head;
+
+        while(current){
+            if(current.value === element)
+            return "element found";
+            current = current.next;       
+    }
+        return "Element not found";
+}
 }
 
 //
